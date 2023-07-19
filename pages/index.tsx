@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { connectMQTT, subscribeToTopic, unsubscribeFromTopic, disconnectMQTT, publishMessage } from '../pages/mqttService';
+import React, { useEffect } from 'react';
+import { connectMQTT, subscribeToTopic, unsubscribeFromTopic, disconnectMQTT, publishMessage } from '../services/mqttService';
 import type { NextPage } from "next";
 
 // const client = mqtt.connect("ws://192.168.1.14:9001");
@@ -28,7 +28,7 @@ const Home: NextPage = () => {
     const client = connectMQTT();
 
     subscribeToTopic('nextopic');
-   
+
 
     return () => {
       unsubscribeFromTopic('nextopic');

@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/mqttService.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "services/mqttService.js"],
   "exclude": ["node_modules"]
 }
