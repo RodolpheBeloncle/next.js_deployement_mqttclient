@@ -4,8 +4,8 @@ import mqtt from 'mqtt';
 const broker_url = process.env.NEXT_PUBLIC_MQTT_BROKER_URL;
 const mqttOptions = {
   clientId: process.env.NEXT_PUBLIC_CLIENTID,
-  username: process.env.NEXT_PUBLIC_USERNAME,
-  password: process.env.NEXT_PUBLIC_PASSWORD,
+  // username: process.env.NEXT_PUBLIC_USERNAME,
+  // password: process.env.NEXT_PUBLIC_PASSWORD,
 };
 
 let mqttClient;
