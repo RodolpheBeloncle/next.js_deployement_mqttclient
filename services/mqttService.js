@@ -1,4 +1,4 @@
-// import fs from 'fs';
+import React from 'react';
 import mqtt from 'mqtt';
 
 const broker_url = process.env.NEXT_PUBLIC_MQTT_BROKER_URL;
